@@ -166,7 +166,6 @@ html {
     margin-right: 0.5%;
     opacity: 0.8;
     transition: 0.6s;
-    border-radius: 8px;
 }
 
 .projects img:hover {
@@ -210,3 +209,88 @@ footer p {
 }
 
 /* FINAL DO RODAPE */
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1080px) {
+    /* INICIO DO HEADER */
+
+    .nav {
+        height: 70px;
+    }
+
+    /* INICIO MAIN */
+
+    .main {
+        height: calc(100vh - 70px)
+    }
+
+    .main h1 {
+        font-size: 32px;
+    }
+
+    .main p {
+        font-size: 18px;
+    }
+
+    .main {
+        background-size: cover;
+    }
+
+    /* FINAL DO MAIN */
+
+    /* INICIO ABOUT */
+    .about {
+        flex-direction: column;
+        padding-top: 50px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .about div {
+        max-width: 80%;
+    }
+
+    .about div h2 {
+        font-size: 32px;
+    }
+
+    .about div p {
+        font-size: 18px;
+    }
+
+    .about img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    /* FINAL DO ABOUT */
+
+    /* INICIO PROJECTS */
+
+    .projects h2 {
+        font-size: 32px;
+    }
+
+    .projects p {
+        font-size: 18px;
+    }
+
+    .projects-list img {
+        width: 27.5%;
+        margin-top: 10px;
+    }
+
+    /* FINAL DE PROJECTS */
+
+    /* INICIO RODAPE */
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer p {
+        margin: 0;
+    }
+}
